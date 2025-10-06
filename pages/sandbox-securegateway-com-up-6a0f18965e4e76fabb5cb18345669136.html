@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Gateway® Sandbox for Penetration Testing-ALSCO</title>
+    <meta name="description" content="Secure Gateway® and ALSCO® Sandbox for Penetration Testing provides a safe environment for testing authentication, file uploads, content detection, and vulnerability assessments. Explore our secure testing environment.">
+    <meta name="keywords" content="Secure Gateway® Sandbox, Penetration Testing,WAF, ALSCO, ALSCO TODAY, ALSCO SOFTWARE,السكو , السكو سوفتوير, شركة السكو تودي, السكيوركيتوي, Cybersecurity Testing,hackerone,ALSCO hackerone, ALSCO Secure Gateway, ALSCO Bug Bounty, Secure Gateway Bug Bounty,Royal Bug Bounty , File Upload Testing, Authentication Testing, Secure File Upload, SQL Injection Testing, XSS Testing, Bug Bounty Program, ALSCO Security">
+
+
+
+
+    <!-- Fonts and Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #002855;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.6rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ddd;
+            font-weight: 600;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to bottom, #003366, #002855), url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+            color: #fff;
+            padding: 6rem 1rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Upload Section */
+        .upload-section {
+            background-color: #fff;
+            padding: 4rem 1rem;
+            border-radius: 10px;
+            margin-top: -3rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .upload-section h2 {
+            text-align: center;
+            color: #004085;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .upload-section form {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .upload-section input[type="file"] {
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .upload-section input[type="submit"] {
+            background-color: #004085;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .upload-section input[type="submit"]:hover {
+            background-color: #002855;
+        }
+
+        .success-message {
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #28a745;
+            text-align: center;
+        }
+
+        .error-message {
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #dc3545;
+            text-align: center;
+        }
+
+        /* Footer */
+        .footer {
+            background: linear-gradient(to bottom, #004085, #003366);
+            color: #ccc;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Secure Seal */
+        .secure-seal {
+            position: fixed;
+            z-index: 1000;
+            width: 150px;
+            height: 65px;
+            bottom: 5px;
+            left: 2px;
+        }
+
+        .secure-seal img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Secure Gateway®</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../admin/" target="_blank">Admin Testing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../up/" target="_blank">Upload Testing</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Secure Gateway® Sandbox for Penetration Testing</h1>
+            <p class="justify-text">
+                <strong>Test File Uploading System:</strong> Use the form below to test our secure file upload system. Ensure you follow all guidelines.
+            </p>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <h2>File Upload Testing</h2>
+            <form action="" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" class="form-control mb-3">
+                <input type="submit" name="SubmitButton" value="Upload File">
+            </form>
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Secure Gateway®. All Rights Reserved.</p>
+            <p>Visit our <a href="https://hackerone.com/alsco" target="_blank">Bug Bounty Program</a>.</p>
+        </div>
+    </footer>
+
+    <!-- Secure Seal -->
+    <div class="secure-seal">
+        <a href="https://securegateway.com" target="_blank"><img src="../Secure_Gateway_Seal.svg" alt="Scanned By Secure Gateway"></a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body></html>

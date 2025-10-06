@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <title>sandbox-royal.securegateway.com--&gt;Secure Gateway</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+
+<style>
+.formtext{
+	font-family:'Open Sans Condensed', sans-serif; 
+	color:Black; 
+	font-size: 25px;
+	text-align:center;
+}
+@media(max-width:768px){
+.newsletterform{
+margin-left:0px;
+}
+.formtext {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: Black;
+    font-size: 20px;
+    text-align: center;
+}
+.newslettersection{
+background:#ffffff;
+	border-radius:5px;
+	border:1px solid #cccccc;
+	padding:10px 20px;
+	width:auto;
+	max-width:850px;
+	margin:0px auto;
+	overflow:hidden;
+}
+input[type="number"] {
+    width: 160px;
+}
+.desktoponly{
+	display:none;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+</style>
+
+
+
+<script type="text/javascript">
+var now = new Date();
+var timeup = now.setSeconds(now.getSeconds() + 30);
+//var timeup = now.setHours(now.getHours() + 1);
+
+var counter = setInterval(timer, 1000);
+
+function timer() {
+  now = new Date();
+  count = Math.round((timeup - now)/1000);
+  if (now > timeup) {
+      
+      clearInterval(counter);
+      document.getElementById("timer").innerHTML = "<a href='http://sandbox-royal.securegateway.com'><input type=\"submit\" value=\"Try Again\"/></a>";
+
+      return;
+  }
+  var seconds = Math.floor((count%30));
+  var minutes = Math.floor((count/30) % 30);
+  document.getElementById("timer").innerHTML = "Please Try Again After: " + minutes + ":" + seconds ;
+}
+
+</script></head></html>

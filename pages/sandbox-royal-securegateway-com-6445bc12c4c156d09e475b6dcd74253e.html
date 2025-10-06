@@ -1,0 +1,1111 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="web, company, site">
+    <meta name="keywords" content="web, company, site">
+    <meta property="og:title" content="Royal CMS">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="img/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Royal CMS</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.svg"> 
+
+    <!-- jquery -->  
+    <!-- the attribute "defer" used to make sure that the script is fully loaded before the DOMContentLoaded event fires. -->
+    <script src="https://connect.facebook.net/en_US/all.js?hash=005c2928b99982f724059dea97718960" async="" crossorigin="anonymous"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+    <!-- <script src="library/jquery/jquery.js"></script>   --> 
+    <!-- <script src="library/jquery/matchheight.js" defer></script> -->    
+
+    <!-- Ads and breaking news -->
+    <!-- <script src="library/ideabox/ticker.js"></script>  -->
+     <!-- <link rel="stylesheet" href="library/ideabox/ticker.css">  --> 
+    <script src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/ideabox/ticker.js"></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/ideabox/ticker.css">  
+ 
+    <!-- splide -->    
+    <!-- <link rel="stylesheet" href="library/splide/splide.css"> -->
+    <!-- <script src="library/splide/splide.js"></script>    -->
+    <!-- <script src="library/splide/splidescroll.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/css/splide.min.css" rel="stylesheet">  
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+    <!-- the two following link for video venobox -->
+    <!-- <script src="library/video/venobox.js"></script>   -->
+    <!-- <link rel="stylesheet" href="library/video/venobox.css"/> -->   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.9/venobox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.9/venobox.min.css">
+
+    <!-- The folliwn link for Cairo font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&amp;display=swap" rel="stylesheet">
+<style>  
+*{font-family:'Arial';} 
+a{text-decoration: none; outline: none;}
+body{overflow-y: scroll; margin:0; direction:ltr; line-height:1.9;} 
+</style><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_dialog{background:#525252b3;position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:700;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v4/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v4/ya/r/3rhSv5V8j3o.gif) #fff no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:#0006;inset:0;min-height:100%;position:absolute;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba),to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:#fff 0 1px 1px -1px inset;color:#fff;font:700 14px Helvetica,sans-serif;text-overflow:ellipsis;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2),to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:700 12px Helvetica,sans-serif;margin:2px -12px;padding:2px 6px 3px;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:700;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v4/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4A4A4A;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4A4A4A;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v4/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+</style></head>
+
+   
+<body class="mm-wrapper"><nav id="my-menu" dir="ltr" style="z-index: 10; " class="mm-menu mm-menu_offcanvas mm-menu_iconpanel mm-menu_hidenavbar mm-menu_pagedim-black mm-menu_border-full mm-menu_theme-white mm-menu_position-back mm-menu_position-left mm-menu_position-front" aria-hidden="true"><div class="mm-navbars_top"><div class="mm-navbar"><a class="mm-btn mm-btn_close mm-navbar__btn" href="#mobile-multimenu"><span class="mm-sronly">Close menu</span></a></div></div> 				
+				                <div class="mm-panels"><div id="mm-0" class="mm-panel mm-panel_opened mm-panel_iconpanel-0"><a class="mm-panel__blocker" href="#mm-0"></a><div class="mm-navbar mm-navbar_sticky"><a class="mm-navbar__title"><span>Menu</span></a></div><ul class="mm-listview"><li class="mm-listitem"> 
+     <a href="./" class="mm-listitem__text"><span>Home page</span></a></li><li class="mm-listitem"> 
+     <a href="/?tender" class="mm-listitem__text"><span>Tender</span></a></li><li class="mm-listitem"> 
+     <a href="?topic" class="mm-listitem__text"><span>Topic</span></a></li><li class="mm-listitem"> 
+     <a href="?album" class="mm-listitem__text"><span>Album</span></a></li><li class="mm-listitem"> 
+     <a href="?video" class="mm-listitem__text"><span>Video</span></a></li><li class="mm-listitem"> 
+     <a href="/?block" class="mm-listitem__text"><span>Block</span></a></li><li class="mm-listitem"> 
+     <a href="/?ads" class="mm-listitem__text"><span>Ads</span></a></li><li class="mm-listitem"> 
+     <a href="?lang=ar" class="mm-listitem__text"><span>Arabic</span></a></li><li class="mm-listitem"> 
+     <a href="?complaint" class="mm-listitem__text"><span>Complaint</span></a></li><li class="mm-listitem"> 
+     <a href="?contact" class="mm-listitem__text"><span>Contact us</span></a></li></ul></div></div></nav> 
+<!-- The following code for preloader   -->
+<div id="preloader" style="opacity: 0.973884; height: 100vh; width: 100%; background: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center; position: fixed; z-index: 99999;">
+    <div class="custom-loader"></div>
+    <style>  
+        .custom-loader {width:45px;height:45px;border-radius:50%;border:2.1px solid;border-color:#E4E4ED;border-right-color: #2B7978;animation:s2 1.2s infinite linear;}
+        @keyframes s2 {to{transform: rotate(1turn)}}
+        } 
+    </style>
+</div>
+<!-- End:  The following code for preloader -->
+
+
+<div class="banner">
+ 
+	<p>Welvome to our website</p>
+</div>
+<style>
+.banner{
+	width:100%;
+	height:80px;
+	user-select:none;
+	background-image: linear-gradient(#416f9d, #416f9d);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	}
+
+.banner img{
+	position:absolute;
+	width:90px;
+	height:80px;
+left:5%;
+	}
+
+.banner p{
+	font-size:20px;
+	color:#FFFFFF;
+	line-height:0px;
+	}
+
+@media (max-width: 700px){
+.banner img{
+	left:2%;
+	}
+.banner p{
+	font-size:16px;
+	}
+}
+</style> 
+
+<div style="height:0px;"></div><div class="menu">
+<form action="?search" method="post" autocomplete="off">
+    <div class="nav-btn">
+    <div class="nav-links">
+<ul><li class="nav-link">
+        <a href="./"><p>Home page</p></a></li><li class="nav-link">
+        <a href="/?tender"><p>Tender</p></a></li><li class="nav-link">
+        <a href="?topic"><p>Topic</p></a></li><li class="nav-link">
+        <a href="?album"><p>Album</p></a></li><li class="nav-link">
+        <a href="?video"><p>Video</p></a></li><li class="nav-link">
+        <a href="/?block"><p>Block</p></a></li><li class="nav-link">
+        <a href="/?ads"><p>Ads</p></a></li><li class="nav-link">
+        <a href="?lang=ar"><p>Arabic</p></a></li><li class="nav-link">
+        <a href="?complaint"><p>Complaint</p></a></li><li class="nav-link">
+        <a href="?contact"><p>Contact us</p></a></li> </ul> 
+</div>
+</div>
+
+    <div class="hamburger">
+                <a href="#my-menu">
+                    <div style="width:35px;height:2px;background:#000000;margin:10px 0;border:0px"></div>
+                    <div style="width:35px;height:2px;background:#000000;margin:10px 0;border:0px"></div>
+                    <div style="width:35px;height:2px;background:#000000;margin:10px 0;border:0px"></div>
+                </a>
+    </div>
+
+    <div class="search"> 
+            <input type="text" id="search" name="search" required="" placeholder="Content search">
+                <label>
+                <input type="submit" style="display:none;">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="000000">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+              </label>    </div> 
+
+    <div style="clear: both;"></div>
+    </form>  
+</div>
+  
+<style> 
+.menu{
+    display:block;
+    width: 100%; 
+    height:60px;
+    position: sticky; 
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3.5px 2px -2px;
+    background:#EEEFF0;
+    z-index:5; 
+}
+.menu .hamburger{
+    display:none;
+} 
+.menu .nav-btn{
+    width:75%;
+    height:100%;  
+    display:inline-block; 
+} 
+.menu .search{
+    position: relative; 
+    width:25%;
+    height:60px;
+    background:#EEEFF0;
+    float:right;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+ 
+}
+.menu .search > input[type=text]{
+    width:100%; 
+    border-radius:25px;
+    border:1px solid #000000;
+    color: #000000;
+    background: transparent;
+    padding:0px 15px;
+    outline:none;
+    height:50px;
+    -webkit-appearance: none;
+    margin:0 20px; 
+} 
+.menu ::placeholder {
+  color: #000000;
+  opacity: 1; /* Firefox */
+}
+.menu :-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #000000;
+}
+.menu ::-ms-input-placeholder { /* Microsoft Edge */
+ color: #000000;
+}
+
+
+
+.menu .search .search-icon{
+    position: absolute; 
+    width: 30px;
+    height: 30px;
+    cursor:pointer;
+    position:absolute;
+    right:30px; 
+    top:16px;
+ }
+.menu .nav-btn ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+.menu .nav-btn p{
+    padding:0;
+    margin:0;
+}
+.menu .nav-links > ul{
+    display: flex;
+    align-items: center;
+}
+.menu .nav-link{
+    position: relative;
+}
+.menu .nav-link > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    text-decoration:none;
+    color:#000000;
+    height:60px;
+    white-space: nowrap;
+}
+.menu .nav-link:hover > a{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+  
+.menu .nav-link .triangleArrowCustomize{
+    width: 0px;
+    height: 0px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-top-color:#000000;
+    border-radius:2px;
+    margin:0 5px;
+}  
+.menu .nav-link:hover  .triangleArrowCustomize{
+    border-top-color:#FFFFFF;
+}
+
+.menu .dropdown{ 
+    position: absolute;
+    width: 220px;
+    display:none;
+}
+.menu .dropdown ul{
+    position: relative; 
+}
+.menu .dropdown-link > a{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 1px solid #efefef;
+    text-decoration:none;
+
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 0 10px;
+    min-height:45px;  
+}
+
+.menu .dropdown-link:hover > a{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.menu .nav-link .dropdown-link .triangleArrowCustomize{
+    transform: rotate(-90deg);
+    border-top-color:#000000;
+}
+.menu .nav-link .dropdown-link:hover > a  .triangleArrowCustomize{
+    border-top-color:#FFFFFF;
+}
+
+.menu .arrow{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -5.5px;  
+    left: 20px;
+    background-color: #FFFFFF;
+    transform: rotate(45deg);
+    cursor: pointer; 
+    z-index: -1;
+}
+.menu .dropdown-link:first-child:hover ~ .arrow{
+    background-color: #000000;
+}
+
+.menu .dropdown-link{ 
+    position: relative;
+}
+.menu .dropdown.second{
+    top: 0;
+    left:100%;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.menu .dropdown.second .arrow{
+    top: 10px; 
+    left: -5.5px;
+}
+
+  
+
+.menu .nav-link:hover > .dropdown
+{
+    display:block;
+    top:130px;
+    animation-name: animation-verticle;
+    animation-duration: 0.4s; 
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-out;
+    opacity:0;
+}
+@keyframes animation-verticle{
+    100%{opacity:1; top:60px;}
+}
+.menu .dropdown-link:hover > .dropdown{
+    display:block;
+    animation-name: animation-horizontal;
+    animation-duration: 0.4s; 
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-out;
+    margin-left: -100px;
+    opacity:0;
+}
+@keyframes animation-horizontal{
+    100%{opacity:1; margin:0;}
+}
+
+@media (max-width: 1000px){
+    .menu .nav-btn{
+        display:none;  
+    } 
+    .menu .search{   
+        width:90%;
+    }
+    .menu .search .search-icon{
+        right:15px;
+    }
+    .menu .search > input[type=text]{   
+        border-radius:0px;
+        margin:0 5px; 
+         
+    }
+    .menu .hamburger{
+        width:10%;
+        height:60px; 
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+   }
+}
+</style><div style="height:15px;"></div><div class="ads bn-effect-slide-up bn-direction-ltr" id="newsTicker12" style="border-color: rgb(236, 61, 99); color: rgb(236, 61, 99); background: rgb(0, 0, 0); height: 50px; line-height: 50px; border-radius: 0px; border-width: 0px;">
+	<div class="bn-label" style="background: rgb(236, 61, 99);">Breaking News</div>
+	<div class="bn-news" style="left: 144.719px; right: 90px;">
+		<ul>
+			<li style="top: -2.16954px; opacity: 0.927682;"><a href="3">Welcome to the ---</a></li>  
+		</ul>
+	</div> 
+	<div class="bn-controls">
+		<button><span class="bn-arrow bn-prev"></span></button>
+		<button><span class="bn-action bn-pause"></span></button>
+		<button><span class="bn-arrow bn-next"></span></button>
+	</div>
+</div>
+
+<style>
+    .ads{
+        position: relative;
+        display: block;
+        width: 100%;
+		user-select:none;
+    } 
+	.ads .bn-label{
+		display:flex;
+		align-items:center;
+		color: #FFFFFF;
+	}
+	.ads .bn-news ul li a{
+
+		color: #FFFFFF;
+	}
+	.ads .bn-news ul li a:hover{
+  		color: #FFFFFF;
+	}
+ 
+	/*control button styles*/
+	.ads .bn-controls button{
+		background:#000000;  
+	} 
+   
+	.ads .bn-controls button:hover{ 
+	background-color: #000000;
+	}  
+
+	.ads .bn-direction-rtl .bn-controls button{
+	border-right: solid 0px #EEE;
+	} 
+
+	.ads .bn-arrow::after{
+	border-color: #FFFFFF;
+	} 
+
+	.ads .bn-play::after {
+		border-left-color: #FFFFFF;
+	}
+
+	.ads .bn-pause::before{
+		background-color: #FFFFFF;
+	}  
+	.ads .bn-pause::after{
+		background-color: #FFFFFF;
+	}
+
+</style> 
+
+<script>
+	$(document).ready(function(){
+				$('#newsTicker12').breakingNews({
+					effect: 'slide-up',
+                   	height: 50,
+					direction: 'ltr',
+					themeColor: '#EC3D63',
+					background: '#000000',
+					scrollSpeed: 1,
+					delayTimer:4000,
+					borderWidth: 0,
+					radius:0,
+				});
+			});
+</script><div style="height:15px;"></div><!-- slider start -->
+<div id="slider" class="splide splide--slide splide--ltr is-active is-initialized" role="region" aria-roledescription="carousel">
+		<div class="splide__progress">
+			<div style="background: rgb(255, 181, 0); height: 3px; width: 34.04%;" class="splide__progress__bar"></div>
+		</div> 
+		<div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev" type="button" aria-label="Go to last slide" aria-controls="slider-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="slider-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--slide splide__track--ltr" id="slider-track" aria-live="off" aria-atomic="true" style="padding-left: 0px; padding-right: 0px;">
+			<ul class="splide__list" id="slider-list" role="presentation" style="transform: translateX(0px);"><li class="splide__slide is-active is-visible" id="slider-slide01" role="tabpanel" aria-roledescription="slide" aria-label="1 of 2" style="margin-right: 0px; width: calc(100% + 0px);"><div id="sliderImg"><img src="https://lh3.googleusercontent.com/pw/AP1GczNofu7Y5pfs1sDcfRWI6F3CSR2Bgs3aueru2_l3lgABCngZzERQ8Rcn7QoP4JHT4vtj6J0IjPZMuXbvxrFzsV0Ryq7sgMp1yq_nHbqAZedFZaSuxUIm4t6g8sA3dGqV_zBkD6GP00r7xj8N2G_z8zHe=w1350-h450-s-no?authuser=0"></div><div id="counter0"></div></li><li class="splide__slide is-next" id="slider-slide02" role="tabpanel" aria-roledescription="slide" aria-label="2 of 2" aria-hidden="true" style="margin-right: 0px; width: calc(100% + 0px);"><div id="sliderImg"><img src="https://lh3.googleusercontent.com/pw/AP1GczNPu9iS9l4hpW-IWxH0itTZtZruyFKAdY-eBKbxfymmjvdh0ZsEIGV20nO38Ld1NbiY4e7DlzHeOKtukwzyFVMpi6uXKisiTyWc7OeiahBcOoVqX-g7jXQyLh1EEfBGAQPVy4RMS6iU5jhJFp0-oaOs=w1350-h450-s-no?authuser=0"></div><div id="counter1"></div></li></ul>
+		</div>
+	<ul class="splide__pagination splide__pagination--ltr" role="tablist" aria-label="Select a slide to show"><li role="presentation"><button class="splide__pagination__page is-active" type="button" role="tab" aria-controls="slider-slide01" aria-label="Go to slide 1" aria-selected="true"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="slider-slide02" aria-label="Go to slide 2" tabindex="-1"></button></li></ul></div><script>
+var sliderStatus = 'available';
+if(sliderStatus == "available"){
+	var objSlider = new Splide( '#slider', {
+	rewind : true,
+	type   : 'slide',
+	perPage: 1,
+	focus  : 'center',
+	perMove:1,
+	waitForTransition:true,
+	resetProgress:true,
+	trimSpace:true,
+	//   speed: 2000,
+	//   interval:5000, 
+	slideFocus:0,  
+	gap: '0px',
+	autoplay:true,
+	pauseOnHover:true,
+	pauseOnFocus:false,
+	resetProgress:true,
+	// direction: 'rtl',
+	direction: 'ltr',
+	drag:false,
+	} ).mount();
+ 
+objSlider.on( 'visible', function () {
+  document.getElementById('counter' + objSlider.index).style.display = "block";
+  });   
+objSlider.on( 'move', function () {
+    document.getElementById('counter' + objSlider.index).style.display = "none";
+  });
+} 
+</script>
+<style>
+	#slider{display: block;margin:auto;width: 85%;user-select:none;position:relative;}
+	#sliderImg{
+		position:relative; 
+	  	width:100%;
+	  	height:500px;
+	} 
+	#sliderImg img{width:100%; height:500px;}
+	#slider .sliderTitle{font-size:17px;color: #fff;position: absolute; text-align: center;bottom:-50px;  opacity:0;width:100%;background-color: rgba(8,2,3,0.54);padding:10px 10px 30px 10px; box-sizing:border-box; animation-name: slidermyanimation; animation-duration: 0.5s;  animation-timing-function: linear; animation-fill-mode: forwards;}
+	@keyframes slidermyanimation{100%{bottom:0;opacity:1;}} 
+	@media (max-width: 700px) { 
+		#slider{width: 100%;}  
+		#sliderImg{width:100%;height:auto} 
+		#sliderImg img{width:100%; height:auto;}    
+		}  
+</style>
+<!-- slider end --><div style="height:30px;"></div><div class="entityAndHeadline"><div class="entity"><div class="entityHeader">News</div><div id="entity" class="splide splide--slide splide--ttb is-active is-initialized" role="region" aria-roledescription="carousel"><div class="splide__arrows splide__arrows--ttb"><button class="splide__arrow entityLocation splide__arrow--prev entityPrev" type="button" aria-label="Go to last slide" aria-controls="entity-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow entityLocation splide__arrow--next entityNext" type="button" aria-label="Next slide" aria-controls="entity-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--slide splide__track--ttb" id="entity-track" aria-live="off" aria-atomic="true" style="padding-top: 0px; padding-bottom: 0px; height: calc(350px);"><ul class="splide__list" id="entity-list" role="presentation" style="transform: translateY(0px);"><li class="splide__slide is-active is-visible" id="entity-slide01" role="tabpanel" aria-roledescription="slide" aria-label="1 of 6" style="height: calc(33.3333%);"><div class="entityContent"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczPbJpsYBDkER3qz8rx2O-AjNLkPa-Rj5sAaMoClAkCuQTR2cryqhkq2ou4LGZetY1kL-ODNM1clDvgE5FbK5Q1dFU4vl0j_vDZXR8GJxkcxIwbkFgp2y86r1fMmoqM0372VkoVzrAQE2LrAQ8etX8qt=w2240-h1260-s-no?authuser=0" align="left"><p><a href="?article=13">You Should Update Apple iOS and Google Chrome ASAP</a></p><p><a href="?article=13">Apple made up for a quiet February by issuing two separate patches in March. At the start of the month, the iPhone maker released iOS 17.4, fixing over 40 flaws including two issues already being used in real-life attacks.</a></p></div></li><li class="splide__slide is-visible is-next" id="entity-slide02" role="tabpanel" aria-roledescription="slide" aria-label="2 of 6" style="height: calc(33.3333%);"><div class="entityContent"><img loading="lazy" src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/1920x1280/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24347781/STK095_Microsoft_03.jpg" align="left"><p><a href="?article=12">Microsoft says it’s cracked the code on an important quantum computing problem</a></p><p><a href="?article=12">Microsoft says it’s figured out how to improve error rates in quantum computing, bringing quantum computing closer to a commercial state. </a></p></div></li><li class="splide__slide" id="entity-slide03" role="tabpanel" aria-roledescription="slide" aria-label="3 of 6" aria-hidden="true" style="height: calc(33.3333%);"><div class="entityContent"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczOt0MJVB0nzwIB87Z4pwKaBASUes2rcmbgPeF_hcAmqJwCeE7rxiQVAHpscdn1-mP9kW8iK4i6dtpX4KjtDbQaYU2s5b1wYPfB07SCc75TTKYQh6tiq5IdTOKLtFB0kcayLvkpKNRb2Ziz-f4SrF_5u=w1900-h900-s-no?authuser=0" align="left"><p><a href="?article=11" tabindex="-1">Apple says App Store and other services are back online after an outage</a></p><p><a href="?article=11" tabindex="-1">The iPhone maker picked up 19% of revenue from its Services category, including some from the App Store, according to its latest quarterly report.</a></p></div></li><li class="splide__slide" id="entity-slide04" role="tabpanel" aria-roledescription="slide" aria-label="4 of 6" aria-hidden="true" style="height: calc(33.3333%);"><div class="entityContent"><img loading="lazy" src="https://shorturl.at/cikoA" align="left"><p><a href="?article=10" tabindex="-1">FTC investigating TikTok over privacy and security</a></p><p><a href="?article=10" tabindex="-1">The Federal Trade Commission is investigating TikTok for its data and security practices, two sources told CNN on the condition of anonymity. </a></p></div></li><li class="splide__slide" id="entity-slide05" role="tabpanel" aria-roledescription="slide" aria-label="5 of 6" aria-hidden="true" style="height: calc(33.3333%);"><div class="entityContent"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczMTrnqbmZILI77yPIGd6lgQK57DPlfT5RIEvQg2L0f1Z1XU3VEmzI9Jpl54bVoM6FrDfjI7v6vhF7sonTcAUiiE4mC2LgWwaRNyJrwc7ky_Do5t06EwnLpzn8Aj_p48b--WxmAN25ogOrarpHj2Q23a=w1160-h653-s-no?authuser=0" align="left"><p><a href="?article=9" tabindex="-1">Meta is accused of censoring a non-profit newspaper and an independent journalist who criticized the company</a></p><p><a href="?article=9" tabindex="-1">Meta blocked a newspaper’s critical report about it on Facebook and its other social sites for hours, sparking a backlash that intensified after the company appeared to subsequently block links to the website of an independent journalist who republished the report</a></p></div></li><li class="splide__slide" id="entity-slide06" role="tabpanel" aria-roledescription="slide" aria-label="6 of 6" aria-hidden="true" style="height: calc(33.3333%);"><div class="entityContent"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczPJHrKXM2B3wNNDmPxFG6SkkgPjs-LtsKnI1tlzQIN9Eu1xUVf7N0DhdYBMNPwC2nxjjF_Axl7uE4wQchvSxvVkglutx1_SX2TsQT1QsfGQfrkLJwV5PgJXfvcj-yGRAWyZve4Co5D6SiU0dNsHYbui=w1160-h653-s-no?authuser=0" align="left"><p><a href="?article=8" tabindex="-1">Microsoft will now let customers worldwide buy Office without Teams, following EU antitrust concerns</a></p><p><a href="?article=8" tabindex="-1">Microsoft will no longer sell its Teams collaboration software as a bundled product with its Office 365 suite anywhere in the world, the company said Monday, in the face of antitrust concerns</a></p></div></li></ul></div><ul class="splide__pagination splide__pagination--ttb" role="tablist" aria-label="Select a slide to show" aria-orientation="vertical"><li role="presentation"><button class="splide__pagination__page is-active" type="button" role="tab" aria-controls="entity-slide01 entity-slide02 entity-slide03" aria-label="Go to page 1" aria-selected="true"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="entity-slide04 entity-slide05 entity-slide06" aria-label="Go to page 2" tabindex="-1"></button></li></ul></div></div><div class="headline"><div id="headline" class="splide splide--fade splide--ltr is-active is-initialized" role="region" aria-roledescription="carousel"><div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev" type="button" aria-label="Go to last slide" aria-controls="headline-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="headline-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--fade splide__track--ltr" id="headline-track" style="padding-left: 0px; padding-right: 0px;" aria-live="off" aria-atomic="true"><ul class="splide__list" id="headline-list" role="presentation"><li class="splide__slide is-active is-visible" id="headline-slide01" role="tabpanel" aria-roledescription="slide" aria-label="1 of 2" style="width: calc(100%); height: 400px; background: url(&quot;https://lh3.googleusercontent.com/pw/AP1GczPJHrKXM2B3wNNDmPxFG6SkkgPjs-LtsKnI1tlzQIN9Eu1xUVf7N0DhdYBMNPwC2nxjjF_Axl7uE4wQchvSxvVkglutx1_SX2TsQT1QsfGQfrkLJwV5PgJXfvcj-yGRAWyZve4Co5D6SiU0dNsHYbui=w1160-h653-s-no?authuser=0&quot;) center center / cover no-repeat; transition: opacity 1500ms cubic-bezier(0.25, 1, 0.5, 1);"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczPJHrKXM2B3wNNDmPxFG6SkkgPjs-LtsKnI1tlzQIN9Eu1xUVf7N0DhdYBMNPwC2nxjjF_Axl7uE4wQchvSxvVkglutx1_SX2TsQT1QsfGQfrkLJwV5PgJXfvcj-yGRAWyZve4Co5D6SiU0dNsHYbui=w1160-h653-s-no?authuser=0" style="display: none;"><div id="0" class="headlineDescription"><a href="?article=8" style="text-decoration:none;color:#fff;">Microsoft will now let customers worldwide buy Office without Teams, following EU antitrust concerns</a></div></li><li class="splide__slide is-next" id="headline-slide02" role="tabpanel" aria-roledescription="slide" aria-label="2 of 2" aria-hidden="true" style="width: calc(100%); height: 400px; background: url(&quot;https://lh3.googleusercontent.com/pw/AP1GczMTrnqbmZILI77yPIGd6lgQK57DPlfT5RIEvQg2L0f1Z1XU3VEmzI9Jpl54bVoM6FrDfjI7v6vhF7sonTcAUiiE4mC2LgWwaRNyJrwc7ky_Do5t06EwnLpzn8Aj_p48b--WxmAN25ogOrarpHj2Q23a=w1160-h653-s-no?authuser=0&quot;) center center / cover no-repeat; transition: opacity 1500ms cubic-bezier(0.25, 1, 0.5, 1);"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczMTrnqbmZILI77yPIGd6lgQK57DPlfT5RIEvQg2L0f1Z1XU3VEmzI9Jpl54bVoM6FrDfjI7v6vhF7sonTcAUiiE4mC2LgWwaRNyJrwc7ky_Do5t06EwnLpzn8Aj_p48b--WxmAN25ogOrarpHj2Q23a=w1160-h653-s-no?authuser=0" style="display: none;"><div id="1" class="headlineDescription"><a href="?article=9" style="text-decoration:none;color:#fff;" tabindex="-1">Meta is accused of censoring a non-profit newspaper and an independent journalist who criticized the company</a></div></li></ul></div><ul class="splide__pagination splide__pagination--ltr" role="tablist" aria-label="Select a slide to show"><li role="presentation"><button class="splide__pagination__page is-active" type="button" role="tab" aria-controls="headline-slide01" aria-label="Go to slide 1" aria-selected="true"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="headline-slide02" aria-label="Go to slide 2" tabindex="-1"></button></li></ul></div></div></div>  
+ 
+<style>
+	.entityAndHeadline{width: 85%;user-select:none;margin:auto;display:flex;align-items:top;justify-content: center;flex-wrap: wrap;}
+	.entityAndHeadline a{text-decoration:none;color:#000;}
+	.entity{width:50%;height:400px;background:#fff; }
+	.entity .entityHeader{height:50px;background:#FF2CDF;display:flex;align-items:center;color:#FFFFFF;padding: 0 10px;}
+
+	/* .entity .entityContent{background:#f3f4f5;height:110px;color:#000; box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14),0 1px 1px 0 rgba(0,0,0,0.12),0 1px 1px 1px rgba(0,0,0,0.2);margin-left:30px;   margin-right:5px;margin-top:1px;} */
+	.entity .entityContent{background:#f3f4f5;height:110px;color:#000; box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14),0 1px 1px 0 rgba(0,0,0,0.12),0 1px 1px 1px rgba(0,0,0,0.2);   margin-right:5px;margin-top:1px;}
+
+	.entity .entityContent img{width:140px;height:110px;}
+	.entity .entityContent p{overflow: hidden; white-space: nowrap; text-overflow: ellipsis;padding:0 10px;margin:0;}
+	.entity .entityLocation{background:transparent}
+	.entity .entityPrev{top:0px;left:18px;right:auto}
+	.entity .entityNext{bottom:0px;left:18px;right:auto} 
+
+	.entity .splide__pagination__page{background:#dbdbdb;}
+	.entity .splide__pagination__page.is-active{background:#cc4fe6;}
+	/* .entity .splide__pagination--ttb{right:97.5%;} */
+	.entity .splide__pagination--ttb{right:101.5%;}
+
+	.headline{background:#fff;width:50%;height:400px;position:relative;}
+	.headline .headlineDescription{color: #fff;position: absolute; text-align: center;bottom:-50px;  opacity:0;width:100%;background-color: rgba(8,2,3,0.41);padding:10px 10px 30px 10px; box-sizing:border-box;animation-name: myanimation; animation-duration: 0.5s;  animation-timing-function: linear; animation-fill-mode: forwards;}
+
+	@keyframes myanimation{100%{bottom:0;opacity:1;}}
+	
+	@media (max-width: 700px) {
+    .entityAndHeadline{width:100%;display:block;}
+ 
+	.entity{width:100%;} 
+	.headline{width:100%;}
+	}
+</style>
+
+<script>
+var entityAvailability = 'available';
+if(entityAvailability == "available"){
+	new Splide('#entity', {
+	direction: 'ttb',
+	rewind: true,
+	cover: true,
+	perPage : 3,
+	height   : '350px',
+	autoplay:true,
+	pauseOnHover:true,
+	pauseOnFocus:false,
+	speed: 1000,
+	interval:3000,
+	arrows: true,
+	perMove:1,
+	classes: {
+		arrow : 'splide__arrow entityLocation',
+		prev  : 'splide__arrow--prev entityPrev',
+		next  : 'splide__arrow--next entityNext',
+  },
+  gap:0,
+  drag:false,}).mount();
+}
+</script>
+
+<script>
+var headlineStatus = 'available';
+if(headlineStatus == "available"){
+  var obj =new Splide('#headline', {
+  type   : 'fade',
+  rewind: true,
+  direction: 'ltr',
+  height   : '400px',
+  speed: 1500, 
+  interval:5000, 
+  cover:true,
+  autoplay:true,
+  pauseOnHover:true,
+  pauseOnFocus:false,
+  drag:false,}).mount();
+  
+  obj.on( 'visible', function () {
+  document.getElementById(obj.index).style.display = "block";
+  });
+
+  obj.on( 'move', function () {
+    document.getElementById(obj.index).style.display = "none";
+  });
+}  
+</script><div style="height:30px;"></div><!-- Block Start -->  
+<div class="block">
+	<div id="block" class="splide splide--loop splide--ltr is-active is-initialized" role="region" aria-roledescription="carousel">
+		<div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev" type="button" aria-label="Go to last slide" aria-controls="block-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="block-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--loop splide__track--ltr" id="block-track" aria-live="off" aria-atomic="true" style="padding-left: 0px; padding-right: 0px;">
+			<ul class="splide__list" id="block-list" role="presentation" style="transform: translateX(-1762.73px);">
+			<li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone01" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87RY2TAbqBCmy2MNfhFYJMt3t_Vl54TMkL32ob9FD2am1nJpnewaUfqVE7RVghaH-4fEppYHMneo8eUogbQ3vdYlqXAX7NV3qfFxQgfgD2s0W48V3_oAp4nrS6kRe_hnSDAvwzvEsPd7PIs9T_jXH8d=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Yahoo</div><div style="height:50px;"><a href="" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone02" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV84enpulcWB-OPoMSrGOJPfK0CBIdKTy9OvrQmOr8UP8dZZWiubB2ewaMXfzSDdjldt7cFuaXzXCchMw3K0_7Ru2H03b_KmFwr5WT2irfLsbZpjbA-P5w80y0A1v50OpAlusDbmvTy4Tb2jTA9fgYUw=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Google</div><div style="height:50px;"><a href="https://google.com" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone03" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87uMJq7S9EfpGVXjiWFAGjkOjN97EGcZliKV93PUtOhb09gWXgBr_KANEF3Z2ccLfp89DNnalehkQF7LKtm6Ht7UiYJXwFmSr0WUK7t3QoOEQcBRXW0ClyqbAdq0_Jt__7382SFzGA1yX986_aeZkxn=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Amazon</div><div style="height:50px;"><a href="" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone04" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87RY2TAbqBCmy2MNfhFYJMt3t_Vl54TMkL32ob9FD2am1nJpnewaUfqVE7RVghaH-4fEppYHMneo8eUogbQ3vdYlqXAX7NV3qfFxQgfgD2s0W48V3_oAp4nrS6kRe_hnSDAvwzvEsPd7PIs9T_jXH8d=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Yahoo</div><div style="height:50px;"><a href="" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone05" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV84enpulcWB-OPoMSrGOJPfK0CBIdKTy9OvrQmOr8UP8dZZWiubB2ewaMXfzSDdjldt7cFuaXzXCchMw3K0_7Ru2H03b_KmFwr5WT2irfLsbZpjbA-P5w80y0A1v50OpAlusDbmvTy4Tb2jTA9fgYUw=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Google</div><div style="height:50px;"><a href="https://google.com" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone06" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87uMJq7S9EfpGVXjiWFAGjkOjN97EGcZliKV93PUtOhb09gWXgBr_KANEF3Z2ccLfp89DNnalehkQF7LKtm6Ht7UiYJXwFmSr0WUK7t3QoOEQcBRXW0ClyqbAdq0_Jt__7382SFzGA1yX986_aeZkxn=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Amazon</div><div style="height:50px;"><a href="" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone07" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87RY2TAbqBCmy2MNfhFYJMt3t_Vl54TMkL32ob9FD2am1nJpnewaUfqVE7RVghaH-4fEppYHMneo8eUogbQ3vdYlqXAX7NV3qfFxQgfgD2s0W48V3_oAp4nrS6kRe_hnSDAvwzvEsPd7PIs9T_jXH8d=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Yahoo</div><div style="height:50px;"><a href="" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone08" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV84enpulcWB-OPoMSrGOJPfK0CBIdKTy9OvrQmOr8UP8dZZWiubB2ewaMXfzSDdjldt7cFuaXzXCchMw3K0_7Ru2H03b_KmFwr5WT2irfLsbZpjbA-P5w80y0A1v50OpAlusDbmvTy4Tb2jTA9fgYUw=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Google</div><div style="height:50px;"><a href="https://google.com" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone is-visible" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone09" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87uMJq7S9EfpGVXjiWFAGjkOjN97EGcZliKV93PUtOhb09gWXgBr_KANEF3Z2ccLfp89DNnalehkQF7LKtm6Ht7UiYJXwFmSr0WUK7t3QoOEQcBRXW0ClyqbAdq0_Jt__7382SFzGA1yX986_aeZkxn=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Amazon</div><div style="height:50px;"><a href=""><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone is-visible is-prev" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone10" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87RY2TAbqBCmy2MNfhFYJMt3t_Vl54TMkL32ob9FD2am1nJpnewaUfqVE7RVghaH-4fEppYHMneo8eUogbQ3vdYlqXAX7NV3qfFxQgfgD2s0W48V3_oAp4nrS6kRe_hnSDAvwzvEsPd7PIs9T_jXH8d=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Yahoo</div><div style="height:50px;"><a href=""><label>Details</label></a></div></li><li class="splide__slide is-active is-visible" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-slide01" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV84enpulcWB-OPoMSrGOJPfK0CBIdKTy9OvrQmOr8UP8dZZWiubB2ewaMXfzSDdjldt7cFuaXzXCchMw3K0_7Ru2H03b_KmFwr5WT2irfLsbZpjbA-P5w80y0A1v50OpAlusDbmvTy4Tb2jTA9fgYUw=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Google</div><div style="height:50px;"><a href="https://google.com"><label>Details</label></a></div></li><li class="splide__slide is-visible is-next" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-slide02" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87uMJq7S9EfpGVXjiWFAGjkOjN97EGcZliKV93PUtOhb09gWXgBr_KANEF3Z2ccLfp89DNnalehkQF7LKtm6Ht7UiYJXwFmSr0WUK7t3QoOEQcBRXW0ClyqbAdq0_Jt__7382SFzGA1yX986_aeZkxn=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Amazon</div><div style="height:50px;"><a href=""><label>Details</label></a></div></li><li class="splide__slide is-visible" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-slide03" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87RY2TAbqBCmy2MNfhFYJMt3t_Vl54TMkL32ob9FD2am1nJpnewaUfqVE7RVghaH-4fEppYHMneo8eUogbQ3vdYlqXAX7NV3qfFxQgfgD2s0W48V3_oAp4nrS6kRe_hnSDAvwzvEsPd7PIs9T_jXH8d=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Yahoo</div><div style="height:50px;"><a href=""><label>Details</label></a></div></li>			<li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone11" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV84enpulcWB-OPoMSrGOJPfK0CBIdKTy9OvrQmOr8UP8dZZWiubB2ewaMXfzSDdjldt7cFuaXzXCchMw3K0_7Ru2H03b_KmFwr5WT2irfLsbZpjbA-P5w80y0A1v50OpAlusDbmvTy4Tb2jTA9fgYUw=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Google</div><div style="height:50px;"><a href="https://google.com" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone12" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87uMJq7S9EfpGVXjiWFAGjkOjN97EGcZliKV93PUtOhb09gWXgBr_KANEF3Z2ccLfp89DNnalehkQF7LKtm6Ht7UiYJXwFmSr0WUK7t3QoOEQcBRXW0ClyqbAdq0_Jt__7382SFzGA1yX986_aeZkxn=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Amazon</div><div style="height:50px;"><a href="" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone13" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87RY2TAbqBCmy2MNfhFYJMt3t_Vl54TMkL32ob9FD2am1nJpnewaUfqVE7RVghaH-4fEppYHMneo8eUogbQ3vdYlqXAX7NV3qfFxQgfgD2s0W48V3_oAp4nrS6kRe_hnSDAvwzvEsPd7PIs9T_jXH8d=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Yahoo</div><div style="height:50px;"><a href="" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone14" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV84enpulcWB-OPoMSrGOJPfK0CBIdKTy9OvrQmOr8UP8dZZWiubB2ewaMXfzSDdjldt7cFuaXzXCchMw3K0_7Ru2H03b_KmFwr5WT2irfLsbZpjbA-P5w80y0A1v50OpAlusDbmvTy4Tb2jTA9fgYUw=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Google</div><div style="height:50px;"><a href="https://google.com" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone15" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87uMJq7S9EfpGVXjiWFAGjkOjN97EGcZliKV93PUtOhb09gWXgBr_KANEF3Z2ccLfp89DNnalehkQF7LKtm6Ht7UiYJXwFmSr0WUK7t3QoOEQcBRXW0ClyqbAdq0_Jt__7382SFzGA1yX986_aeZkxn=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Amazon</div><div style="height:50px;"><a href="" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone16" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87RY2TAbqBCmy2MNfhFYJMt3t_Vl54TMkL32ob9FD2am1nJpnewaUfqVE7RVghaH-4fEppYHMneo8eUogbQ3vdYlqXAX7NV3qfFxQgfgD2s0W48V3_oAp4nrS6kRe_hnSDAvwzvEsPd7PIs9T_jXH8d=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Yahoo</div><div style="height:50px;"><a href="" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone17" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV84enpulcWB-OPoMSrGOJPfK0CBIdKTy9OvrQmOr8UP8dZZWiubB2ewaMXfzSDdjldt7cFuaXzXCchMw3K0_7Ru2H03b_KmFwr5WT2irfLsbZpjbA-P5w80y0A1v50OpAlusDbmvTy4Tb2jTA9fgYUw=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Google</div><div style="height:50px;"><a href="https://google.com" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone18" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87uMJq7S9EfpGVXjiWFAGjkOjN97EGcZliKV93PUtOhb09gWXgBr_KANEF3Z2ccLfp89DNnalehkQF7LKtm6Ht7UiYJXwFmSr0WUK7t3QoOEQcBRXW0ClyqbAdq0_Jt__7382SFzGA1yX986_aeZkxn=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Amazon</div><div style="height:50px;"><a href="" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone19" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV87RY2TAbqBCmy2MNfhFYJMt3t_Vl54TMkL32ob9FD2am1nJpnewaUfqVE7RVghaH-4fEppYHMneo8eUogbQ3vdYlqXAX7NV3qfFxQgfgD2s0W48V3_oAp4nrS6kRe_hnSDAvwzvEsPd7PIs9T_jXH8d=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Yahoo</div><div style="height:50px;"><a href="" tabindex="-1"><label>Details</label></a></div></li><li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 20px 1px -1px; width: calc(20% - 16px);" id="block-clone20" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggBlock"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/ABLVV84enpulcWB-OPoMSrGOJPfK0CBIdKTy9OvrQmOr8UP8dZZWiubB2ewaMXfzSDdjldt7cFuaXzXCchMw3K0_7Ru2H03b_KmFwr5WT2irfLsbZpjbA-P5w80y0A1v50OpAlusDbmvTy4Tb2jTA9fgYUw=w600-h400-s-no?authuser=0"></div><div class="titleBlock" style="height: 50px;">Google</div><div style="height:50px;"><a href="https://google.com" tabindex="-1"><label>Details</label></a></div></li></ul>
+		</div>
+	<ul class="splide__pagination splide__pagination--ltr" role="tablist" aria-label="Select a slide to show"><li role="presentation"><button class="splide__pagination__page is-active" type="button" role="tab" aria-controls="block-slide01" aria-label="Go to slide 1" aria-selected="true"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="block-slide02" aria-label="Go to slide 2" tabindex="-1"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="block-slide03" aria-label="Go to slide 3" tabindex="-1"></button></li></ul></div> 
+</div> 
+<style> 
+	.block{position: relative;display: block;margin:auto; width: 85%;user-select:none;}
+	.block .imggBlock{display:block;background:#f7f7f7;}
+	.block .imggBlock img{width:100%;padding-bottom:5px;}
+	.block .titleBlock{display:flex;align-items:center;background:#fff;min-height:50px;}
+	.block label{position:absolute;width:100px;bottom:5px;height:50px;display:flex;align-items:center;justify-content:center;background:#000000;color:#FFFFFF;cursor:pointer;}
+	.block label:before{content: '';width: 50%;height: 100%; position: absolute; top: 0;left: 0;background: rgba(255,255,255,.2);z-index:2;pointer-events: none;}
+	.block label:hover{opacity:0.9;transition: all 0.2s ease;}
+	.block .splide__pagination__page{background:#dbdbdb;}
+	.block .splide__pagination__page.is-active{background:#cc4fe6;}
+	.block .splide__pagination{position:relative;bottom:0px;height:50px;background:#fff;}
+	@media (max-width: 700px){.block{width:95%;display:block;}}
+</style> 
+<script>  
+$(function(){$('.titleBlock').matchHeight();}); 
+</script> 
+<script>
+var blockStatus = 'available';
+if(blockStatus == "available"){
+	new Splide( '#block', {
+	rewind : true,
+	type   : 'loop',
+	perPage: 5,
+	focus  : 'center',
+	perMove:1,
+	drag:false,
+	autoplay:true,
+	pauseOnHover:true,
+	pauseOnFocus:false,
+	autoplay:true,
+	direction: 'ltr', 
+	drag:false,
+	gap : '20px',
+  	breakpoints: {
+		'700': {
+			perPage: 2,
+      drag:true,
+		},
+
+		'1200': { 
+      perPage: 3,
+      drag:true,
+		},
+
+  },} ).mount();
+}
+</script>
+<!-- Block End --><div style="height:30px;"></div><div class="ticker bn-effect-typography bn-direction-ltr" id="newsTicker13" style="border-color: rgb(21, 119, 158); color: rgb(21, 119, 158); background: rgb(255, 255, 255); height: 50px; line-height: 50px; border-radius: 0px; border-width: 0px;">
+	<div class="bn-label" style="background: rgb(21, 119, 158);">Latest news</div>
+	<div class="bn-news" style="left: 121.594px; right: 90px;">
+		<ul> 
+			<li style="width: 3.70937%; display: list-item; overflow: hidden; opacity: 1;"><a href="?article=13">You Should Update Apple iOS and Google Chrome ASAP</a></li><li style="display: none;"><a href="?article=12">Microsoft says it’s cracked the code on an important quantum computing problem</a></li><li style="display: none;"><a href="?article=11">Apple says App Store and other services are back online after an outage</a></li><li style="display: none;"><a href="?article=10">FTC investigating TikTok over privacy and security</a></li><li style="display: none;"><a href="?article=9">Meta is accused of censoring a non-profit newspaper and an independent journalist who criticized the company</a></li> 
+		</ul> 
+	</div> 
+	<div class="bn-controls">
+		<button><span class="bn-arrow bn-prev"></span></button>
+		<button><span class="bn-action bn-pause"></span></button>
+		<button><span class="bn-arrow bn-next"></span></button>
+	</div>
+</div>
+
+<style>
+    .ticker{
+        position: relative;
+        display: block;
+		margin:auto; 
+        width: 85%;
+		user-select:none;
+    } 
+	.ticker .bn-label{
+		color: #FFFFFF;
+	}
+	.ticker .bn-news ul li a{
+		color: #222222;
+	}
+	.ticker .bn-news ul li a:hover{
+  		color: #222222;
+	}
+ 
+	/*control button styles*/
+	.ticker .bn-controls button{
+		background:#FFFFFF;  
+	} 
+   
+	.ticker .bn-controls button:hover{ 
+	background-color: #FFFFFF;
+	}  
+
+  
+	.ticker .bn-arrow::after{
+	border-color: #222222;
+	} 
+
+	.ticker .bn-play::after {
+		border-left-color: #222222;
+	}
+
+	.ticker .bn-pause::before{
+		background-color: #222222;
+	}  
+	.ticker .bn-pause::after{
+		background-color: #222222;
+	}
+
+@media (max-width: 700px) {
+        .ticker{
+              width:100%; 
+        }
+}
+</style> 
+<script>
+	$(document).ready(function(){
+				$('#newsTicker13').breakingNews({
+					effect: 'typography',
+                    height: 50,
+					direction: 'ltr',
+					themeColor: '#15779E',
+					background: '#FFFFFF',
+					scrollSpeed: 1,
+					delayTimer:4000,
+					borderWidth: 0,
+					radius:0,
+				});
+			});
+</script> <div style="height:30px;"></div><!-- Article Start -->
+<div class="article-grid-container">
+			<div class="individual-grid-item"><div class="image"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczPbJpsYBDkER3qz8rx2O-AjNLkPa-Rj5sAaMoClAkCuQTR2cryqhkq2ou4LGZetY1kL-ODNM1clDvgE5FbK5Q1dFU4vl0j_vDZXR8GJxkcxIwbkFgp2y86r1fMmoqM0372VkoVzrAQE2LrAQ8etX8qt=w2240-h1260-s-no?authuser=0"></div><div class="overlay"></div><div class="title" style="height: 91.1719px;"><a href="?article=13">You Should Update Apple iOS and Google Chrome ASAP</a></div><div class="description" style="height: 151.953px;">Apple made up for a quiet February by issuing two separate patches in March. At the start of the month, the iPhone maker released iOS 17.4, fixing over 40 flaws including two issues already being u...</div><div class="properties"><img loading="lazy" src="img/home-calendar.svg" width="18px" style="padding:0 5px;">2024-04-08 <img loading="lazy" src="img/home-time.svg" width="22px" style="padding:0 5px;"><span dir="ltr">08:04 PM</span> <img loading="lazy" src="img/home-read.svg" width="22px" style="padding:0 5px;">928486</div><a href="?article=13"><div class="more">More</div></a></div><div class="individual-grid-item"><div class="image"><img loading="lazy" src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/1920x1280/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24347781/STK095_Microsoft_03.jpg"></div><div class="overlay"></div><div class="title" style="height: 91.1719px;"><a href="?article=12">Microsoft says it’s cracked the code on an important quantum computing problem</a></div><div class="description" style="height: 151.953px;">Microsoft says it’s figured out how to improve error rates in quantum computing, bringing quantum computing closer to a commercial state. </div><div class="properties"><img loading="lazy" src="img/home-calendar.svg" width="18px" style="padding:0 5px;">2024-04-08 <img loading="lazy" src="img/home-time.svg" width="22px" style="padding:0 5px;"><span dir="ltr">07:37 PM</span> <img loading="lazy" src="img/home-read.svg" width="22px" style="padding:0 5px;">935730</div><a href="?article=12"><div class="more">More</div></a></div><div class="individual-grid-item"><div class="image"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczOt0MJVB0nzwIB87Z4pwKaBASUes2rcmbgPeF_hcAmqJwCeE7rxiQVAHpscdn1-mP9kW8iK4i6dtpX4KjtDbQaYU2s5b1wYPfB07SCc75TTKYQh6tiq5IdTOKLtFB0kcayLvkpKNRb2Ziz-f4SrF_5u=w1900-h900-s-no?authuser=0"></div><div class="overlay"></div><div class="title" style="height: 91.1719px;"><a href="?article=11">Apple says App Store and other services are back online after an outage</a></div><div class="description" style="height: 151.953px;">The iPhone maker picked up 19% of revenue from its Services category, including some from the App Store, according to its latest quarterly report.</div><div class="properties"><img loading="lazy" src="img/home-calendar.svg" width="18px" style="padding:0 5px;">2024-04-08 <img loading="lazy" src="img/home-time.svg" width="22px" style="padding:0 5px;"><span dir="ltr">07:33 PM</span> <img loading="lazy" src="img/home-read.svg" width="22px" style="padding:0 5px;">1037308</div><a href="?article=11"><div class="more">More</div></a></div><div class="individual-grid-item"><div class="image"><img loading="lazy" src="https://shorturl.at/cikoA"></div><div class="overlay"></div><div class="title" style="height: 91.1719px;"><a href="?article=10">FTC investigating TikTok over privacy and security</a></div><div class="description" style="height: 151.953px;">The Federal Trade Commission is investigating TikTok for its data and security practices, two sources told CNN on the condition of anonymity. </div><div class="properties"><img loading="lazy" src="img/home-calendar.svg" width="18px" style="padding:0 5px;">2024-04-08 <img loading="lazy" src="img/home-time.svg" width="22px" style="padding:0 5px;"><span dir="ltr">07:26 PM</span> <img loading="lazy" src="img/home-read.svg" width="22px" style="padding:0 5px;">1117190</div><a href="?article=10"><div class="more">More</div></a></div><div class="individual-grid-item"><div class="image"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczMTrnqbmZILI77yPIGd6lgQK57DPlfT5RIEvQg2L0f1Z1XU3VEmzI9Jpl54bVoM6FrDfjI7v6vhF7sonTcAUiiE4mC2LgWwaRNyJrwc7ky_Do5t06EwnLpzn8Aj_p48b--WxmAN25ogOrarpHj2Q23a=w1160-h653-s-no?authuser=0"></div><div class="overlay"></div><div class="title" style="height: 91.1719px;"><a href="?article=9">Meta is accused of censoring a non-profit newspaper and an independent journa...</a></div><div class="description" style="height: 151.953px;">Meta blocked a newspaper’s critical report about it on Facebook and its other social sites for hours, sparking a backlash that intensified after the company appeared to subsequently block links to ...</div><div class="properties"><img loading="lazy" src="img/home-calendar.svg" width="18px" style="padding:0 5px;">2024-04-08 <img loading="lazy" src="img/home-time.svg" width="22px" style="padding:0 5px;"><span dir="ltr">07:22 PM</span> <img loading="lazy" src="img/home-read.svg" width="22px" style="padding:0 5px;">948455</div><a href="?article=9"><div class="more">More</div></a></div><div class="individual-grid-item"><div class="image"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczPJHrKXM2B3wNNDmPxFG6SkkgPjs-LtsKnI1tlzQIN9Eu1xUVf7N0DhdYBMNPwC2nxjjF_Axl7uE4wQchvSxvVkglutx1_SX2TsQT1QsfGQfrkLJwV5PgJXfvcj-yGRAWyZve4Co5D6SiU0dNsHYbui=w1160-h653-s-no?authuser=0"></div><div class="overlay"></div><div class="title" style="height: 91.1719px;"><a href="?article=8">Microsoft will now let customers worldwide buy Office without Teams, followin...</a></div><div class="description" style="height: 151.953px;">Microsoft will no longer sell its Teams collaboration software as a bundled product with its Office 365 suite anywhere in the world, the company said Monday, in the face of antitrust concerns</div><div class="properties"><img loading="lazy" src="img/home-calendar.svg" width="18px" style="padding:0 5px;">2024-04-08 <img loading="lazy" src="img/home-time.svg" width="22px" style="padding:0 5px;"><span dir="ltr">07:15 PM</span> <img loading="lazy" src="img/home-read.svg" width="22px" style="padding:0 5px;">708644</div><a href="?article=8"><div class="more">More</div></a></div></div>
+<a href="?more-article" class="moreArticle">Show more</a> 
+<style>
+	.article-grid-container{
+        width: 85%;
+        margin:auto;
+        background:#fff; 
+        display: grid;
+        grid-template-columns: repeat(3, 320px);
+        gap:30px 80px;  
+        justify-content: center; /* Center the grid items horizontally within the grid */
+        box-sizing:border-box; 
+    }
+	.article-grid-container a{text-decoration:none;color:#000;}
+	.article-grid-container .individual-grid-item{background:#fff;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);}
+    .article-grid-container .individual-grid-item .image{width:auto;height:220px}
+	.article-grid-container .individual-grid-item .image img{width:100%;height:100%;}
+	.article-grid-container .individual-grid-item .overlay{background-color: green; width: 0px;height: 4px;transition: .5s ease;}
+	.article-grid-container .individual-grid-item:hover .overlay {width: 100%;}
+	.article-grid-container .individual-grid-item .title{padding:5px;text-align:justify; font-weight: bold;}
+	.article-grid-container .individual-grid-item .description{padding:5px;text-align:justify;}
+	.article-grid-container .individual-grid-item .properties{height:50px;display:flex;align-items:center;}
+	.article-grid-container .individual-grid-item .more{position:relative; margin:5px;height:50px; display:flex;align-items:center;justify-content:center;width:100px; background:#000000;color:#FFFFFF ;cursor:pointer;}
+	/* .article-grid-container .individual-grid-item .more:before{content: '';width: 50%;height: 100%; position: absolute; top: 0;left: 0;background: rgba(255,255,255,.2);z-index:2;pointer-events: none;} */
+	.article-grid-container .individual-grid-item .more:hover{opacity:0.8;transition: all 0.2s ease;}
+ 
+    .moreArticle{width:320px;margin:auto;margin-top:20px;height:50px;display:flex;align-items:center;justify-content:center;background:#fff;color:#000;border:1px solid #aaa;border-radius:0px;}
+	.moreArticle:hover{opacity:0.8;transition: all 0.2s ease;}
+
+
+    @media (max-width: 1200px) {   
+        .article-grid-container{
+            grid-template-columns: repeat(2, 320px);
+        } 
+
+    @media (max-width: 800px) {  
+        .article-grid-container{
+            grid-template-columns: repeat(1, 320px);
+        }
+	
+}
+</style> 
+<!-- Article Start -->
+  
+<script>
+	$(function() {
+	$('.title').matchHeight(); 
+	$('.description').matchHeight();
+});
+ </script>  <div style="height:80px;"></div><!-- Topic and Facebook Start -->  
+<div class="topicAndFacebook"><div class="topic"><div class="headerRoyalTopic">Topics</div><div id="topic" class="splide splide--loop splide--ltr is-active is-initialized" role="region" aria-roledescription="carousel"><div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide" aria-controls="topic-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="topic-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--loop splide__track--ltr" id="topic-track" aria-live="off" aria-atomic="true" style="padding-left: 0px; padding-right: 0px;"><ul class="splide__list" id="topic-list" role="presentation" style="transform: translateX(-888.531px);"><li class="splide__slide splide__slide--clone is-active" id="topic-clone01" role="group" aria-roledescription="slide" aria-label="1 of 1" style="margin-right: 20px; width: calc(33.3333% - 13.3333px);" aria-hidden="true"><div class="box" id="box1"><div class="name" style="height: 50px;">News</div><a href="?topic=2" tabindex="-1"><div class="details" id="details1">Details</div></a></div></li><li class="splide__slide splide__slide--clone is-active" id="topic-clone02" role="group" aria-roledescription="slide" aria-label="1 of 1" style="margin-right: 20px; width: calc(33.3333% - 13.3333px);" aria-hidden="true"><div class="box" id="box1"><div class="name" style="height: 50px;">News</div><a href="?topic=2" tabindex="-1"><div class="details" id="details1">Details</div></a></div></li><li class="splide__slide splide__slide--clone is-active" id="topic-clone03" role="group" aria-roledescription="slide" aria-label="1 of 1" style="margin-right: 20px; width: calc(33.3333% - 13.3333px);" aria-hidden="true"><div class="box" id="box1"><div class="name" style="height: 50px;">News</div><a href="?topic=2" tabindex="-1"><div class="details" id="details1">Details</div></a></div></li><li class="splide__slide splide__slide--clone is-active" id="topic-clone04" role="group" aria-roledescription="slide" aria-label="1 of 1" style="margin-right: 20px; width: calc(33.3333% - 13.3333px);" aria-hidden="true"><div class="box" id="box1"><div class="name" style="height: 50px;">News</div><a href="?topic=2" tabindex="-1"><div class="details" id="details1">Details</div></a></div></li><li class="splide__slide splide__slide--clone is-active" id="topic-clone05" role="group" aria-roledescription="slide" aria-label="1 of 1" style="margin-right: 20px; width: calc(33.3333% - 13.3333px);" aria-hidden="true"><div class="box" id="box1"><div class="name" style="height: 50px;">News</div><a href="?topic=2" tabindex="-1"><div class="details" id="details1">Details</div></a></div></li><li class="splide__slide splide__slide--clone is-active is-visible is-prev" id="topic-clone06" role="group" aria-roledescription="slide" aria-label="1 of 1" style="margin-right: 20px; width: calc(33.3333% - 13.3333px);"><div class="box" id="box1"><div class="name" style="height: 50px;">News</div><a href="?topic=2"><div class="details" id="details1">Details</div></a></div></li><li class="splide__slide is-active is-visible" id="topic-slide01" role="group" aria-roledescription="slide" aria-label="1 of 1" style="margin-right: 20px; width: calc(33.3333% - 13.3333px);"><div class="box" id="box1"><div class="name" style="height: 50px;">News</div><a href="?topic=2"><div class="details" id="details1">Details</div></a></div></li><style>.topicAndFacebook .topic .box #details1{background:#E91E63; box-shadow: 0 0 0 0px #E91E63;}</style><style>.topicAndFacebook .topic #box1:hover #details1{box-shadow: 0 0 0 150px #E91E63; }</style><li class="splide__slide splide__slide--clone is-active is-visible is-next" id="topic-clone07" role="group" aria-roledescription="slide" aria-label="1 of 1" style="margin-right: 20px; width: calc(33.3333% - 13.3333px);"><div class="box" id="box1"><div class="name" style="height: 50px;">News</div><a href="?topic=2"><div class="details" id="details1">Details</div></a></div></li><li class="splide__slide splide__slide--clone is-active" id="topic-clone08" role="group" aria-roledescription="slide" aria-label="1 of 1" style="margin-right: 20px; width: calc(33.3333% - 13.3333px);" aria-hidden="true"><div class="box" id="box1"><div class="name" style="height: 50px;">News</div><a href="?topic=2" tabindex="-1"><div class="details" id="details1">Details</div></a></div></li><li class="splide__slide splide__slide--clone is-active" id="topic-clone09" role="group" aria-roledescription="slide" aria-label="1 of 1" style="margin-right: 20px; width: calc(33.3333% - 13.3333px);" aria-hidden="true"><div class="box" id="box1"><div class="name" style="height: 50px;">News</div><a href="?topic=2" tabindex="-1"><div class="details" id="details1">Details</div></a></div></li><li class="splide__slide splide__slide--clone is-active" id="topic-clone10" role="group" aria-roledescription="slide" aria-label="1 of 1" style="margin-right: 20px; width: calc(33.3333% - 13.3333px);" aria-hidden="true"><div class="box" id="box1"><div class="name" style="height: 50px;">News</div><a href="?topic=2" tabindex="-1"><div class="details" id="details1">Details</div></a></div></li><li class="splide__slide splide__slide--clone is-active" id="topic-clone11" role="group" aria-roledescription="slide" aria-label="1 of 1" style="margin-right: 20px; width: calc(33.3333% - 13.3333px);" aria-hidden="true"><div class="box" id="box1"><div class="name" style="height: 50px;">News</div><a href="?topic=2" tabindex="-1"><div class="details" id="details1">Details</div></a></div></li><li class="splide__slide splide__slide--clone is-active" id="topic-clone12" role="group" aria-roledescription="slide" aria-label="1 of 1" style="margin-right: 20px; width: calc(33.3333% - 13.3333px);" aria-hidden="true"><div class="box" id="box1"><div class="name" style="height: 50px;">News</div><a href="?topic=2" tabindex="-1"><div class="details" id="details1">Details</div></a></div></li></ul></div></div></div><div class="facebook"><div class="headerRoyalFb">Facebbok</div><div class="fb-like-box fb_iframe_widget" data-lazy="true" data-href="https://facebook.com/alscosoftware" data-width="600" data-height="320px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false" fb-xfbml-state="parsed" fb-iframe-plugin-query="app_id=&amp;color_scheme=light&amp;container_width=511&amp;header=true&amp;height=320&amp;href=https%3A%2F%2Ffacebook.com%2Falscosoftware&amp;lazy=true&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=600"><span style="vertical-align: top; width: 1px; height: 1px; overflow: hidden;"><iframe name="f00cb0f42b1e615e4" width="600px" height="320px" data-testid="fb:like_box Facebook Social Plugin" title="fb:like_box Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" loading="lazy" src="https://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1bf415c1160b9b02%26domain%3Dsandbox-royal.securegateway.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fsandbox-royal.securegateway.com%252Ff60c21bb886e447a4%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=511&amp;header=true&amp;height=320&amp;href=https%3A%2F%2Ffacebook.com%2Falscosoftware&amp;lazy=true&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=600" style="border: none;"></iframe></span></div><script async="" src="//connect.facebook.net/en_US/all.js#xfbml=1" charset="utf-8"></script> </div></div>
+<script>
+var topicStatus = 'available';
+if(topicStatus == "available"){
+	new Splide( '#topic', {
+	type   : 'loop',
+	drag   : false,
+	focus  : 'center',
+	pagination: false,
+	perPage: 3,
+	autoScroll: {speed: 1,},
+	direction: 'ltr', 
+	gap : '20px',
+	breakpoints: {'1000': {perPage: 2,} },
+	} ).mount( window.splide.Extensions );
+}
+</script>
+<style>
+.topicAndFacebook{user-select:none;background:#fff;width: 85%;margin:auto;display:flex;align-items:start;justify-content:space-between;flex-wrap:wrap;}
+	.topicAndFacebook a{text-decoration:none; color:#000;}
+	.topicAndFacebook .topic{width:47%; background:#fff;}
+	.topicAndFacebook .topic .headerRoyalTopic{height:60px;display:flex;align-items:center;background:#FF6F42;color:#FFFFFF;padding:0px 10px;}
+	.topicAndFacebook .topic .box{border:0px solid #000;overflow: hidden; min-height:130px;background-color: #fff; padding:5px; box-sizing:border-box;}
+	.topicAndFacebook .topic .box:before{content: '';width: 50%;height: 100%; position: absolute; top: 0;left: 0;background: rgba(255,255,255,.2);z-index:2;pointer-events: none;}
+	.topicAndFacebook .topic .name{transition: 0.5s;text-align:center; min-height:50px;color:#000;z-index:1;}
+	.topicAndFacebook .topic .box:hover .name{color:#fff;}
+
+	.topicAndFacebook .topic .box .details{margin:auto;border:0px;color:#fff; height:50px;width:100px;display:flex;align-items:center;justify-content:center;transition: 0.7s;}
+
+
+	.topicAndFacebook .topic .splide__pagination__page{background:#dbdbdb;border-radius:10%;width:20px;height:5px;}
+	.topicAndFacebook .topic .splide__pagination__page.is-active{background:#cc4fe6;transform:scale(1);}
+	.topicAndFacebook .topic .splide__pagination{position:relative;bottom:0px;height:15px;background:#fff;}
+	
+	.topicAndFacebook .topic .splide__arrow{background:transparent}
+	.topicAndFacebook .topic .splide__arrow--prev{left:0em}
+	.topicAndFacebook .topic .splide__arrow--next{right:0em}
+	.topicAndFacebook .topic .splide__arrows--rtl .splide__arrow--prev{left:auto;right:0em}
+	.topicAndFacebook .topic .splide__arrows--rtl .splide__arrow--next{left:0em;right:auto}
+
+	.topicAndFacebook .facebook{width:47%; background:#fff;}
+	.topicAndFacebook .facebook .headerRoyalFb{height:60px;display:flex;align-items:center;background:#FF6F42;color:#FFFFFF;padding:0px 10px;}
+
+
+	@media (max-width: 700px){
+			.topicAndFacebook{
+				width:95%;
+				display:block; 
+			}
+			.topicAndFacebook .topic{
+				width:100%;
+			}
+			.topicAndFacebook .facebook{
+				width:100%; 
+			}
+	  
+	}
+</style>
+
+<script>
+	$(function(){$('.name').matchHeight();});  
+</script>
+<!-- Topic and Facebook End -->
+
+
+   <div style="height:90px;"></div><!-- Video Start -->  
+<div class="video"> 
+	<div id="video" class="splide splide--loop splide--ltr is-active is-initialized" role="region" aria-roledescription="carousel">
+		<div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev" type="button" aria-label="Go to last slide" aria-controls="video-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="video-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--loop splide__track--ltr" id="video-track" aria-live="off" aria-atomic="true" style="padding-left: 0px; padding-right: 0px;">
+			<ul class="splide__list" id="video-list" role="presentation" style="transform: translateX(-1778.73px);">
+			<li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone01" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczOt0MJVB0nzwIB87Z4pwKaBASUes2rcmbgPeF_hcAmqJwCeE7rxiQVAHpscdn1-mP9kW8iK4i6dtpX4KjtDbQaYU2s5b1wYPfB07SCc75TTKYQh6tiq5IdTOKLtFB0kcayLvkpKNRb2Ziz-f4SrF_5u=w1900-h900-s-no?authuser=0" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside The $5 Billion Apple Headquarters " href="https://www.youtube.com/watch?v=FzcfZyEhOoI" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside The $5 Billion Apple Headquarters </div></li><li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone02" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2095060036.jpg?c=16x9&amp;q=h_653,w_1160,c_fill/f_webp" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title="TikTok LA Office Tour" href="https://www.youtube.com/watch?v=bMkevtEhF2E" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo">TikTok LA Office Tour</div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone03" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/1920x1280/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24347781/STK095_Microsoft_03.jpg" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside Microsoft`s Massive Headquarters " href="https://www.youtube.com/watch?v=lOTmYcxCxjU" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside Microsoft`s Massive Headquarters </div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone04" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczOt0MJVB0nzwIB87Z4pwKaBASUes2rcmbgPeF_hcAmqJwCeE7rxiQVAHpscdn1-mP9kW8iK4i6dtpX4KjtDbQaYU2s5b1wYPfB07SCc75TTKYQh6tiq5IdTOKLtFB0kcayLvkpKNRb2Ziz-f4SrF_5u=w1900-h900-s-no?authuser=0" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside The $5 Billion Apple Headquarters " href="https://www.youtube.com/watch?v=FzcfZyEhOoI" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside The $5 Billion Apple Headquarters </div></li><li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone05" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2095060036.jpg?c=16x9&amp;q=h_653,w_1160,c_fill/f_webp" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title="TikTok LA Office Tour" href="https://www.youtube.com/watch?v=bMkevtEhF2E" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo">TikTok LA Office Tour</div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone06" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/1920x1280/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24347781/STK095_Microsoft_03.jpg" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside Microsoft`s Massive Headquarters " href="https://www.youtube.com/watch?v=lOTmYcxCxjU" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside Microsoft`s Massive Headquarters </div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone07" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczOt0MJVB0nzwIB87Z4pwKaBASUes2rcmbgPeF_hcAmqJwCeE7rxiQVAHpscdn1-mP9kW8iK4i6dtpX4KjtDbQaYU2s5b1wYPfB07SCc75TTKYQh6tiq5IdTOKLtFB0kcayLvkpKNRb2Ziz-f4SrF_5u=w1900-h900-s-no?authuser=0" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside The $5 Billion Apple Headquarters " href="https://www.youtube.com/watch?v=FzcfZyEhOoI" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside The $5 Billion Apple Headquarters </div></li><li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone08" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2095060036.jpg?c=16x9&amp;q=h_653,w_1160,c_fill/f_webp" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title="TikTok LA Office Tour" href="https://www.youtube.com/watch?v=bMkevtEhF2E" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo">TikTok LA Office Tour</div></li><li class="splide__slide splide__slide--clone is-visible" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone09" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3"><div class="imggg"><img loading="lazy" src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/1920x1280/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24347781/STK095_Microsoft_03.jpg" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside Microsoft`s Massive Headquarters " href="https://www.youtube.com/watch?v=lOTmYcxCxjU"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside Microsoft`s Massive Headquarters </div></li><li class="splide__slide splide__slide--clone is-visible is-prev" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone10" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3"><div class="imggg"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczOt0MJVB0nzwIB87Z4pwKaBASUes2rcmbgPeF_hcAmqJwCeE7rxiQVAHpscdn1-mP9kW8iK4i6dtpX4KjtDbQaYU2s5b1wYPfB07SCc75TTKYQh6tiq5IdTOKLtFB0kcayLvkpKNRb2Ziz-f4SrF_5u=w1900-h900-s-no?authuser=0" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside The $5 Billion Apple Headquarters " href="https://www.youtube.com/watch?v=FzcfZyEhOoI"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside The $5 Billion Apple Headquarters </div></li><li class="splide__slide is-active is-visible" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-slide01" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3"><div class="imggg"><img loading="lazy" src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2095060036.jpg?c=16x9&amp;q=h_653,w_1160,c_fill/f_webp" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title="TikTok LA Office Tour" href="https://www.youtube.com/watch?v=bMkevtEhF2E"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo">TikTok LA Office Tour</div></li><li class="splide__slide is-visible is-next" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-slide02" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3"><div class="imggg"><img loading="lazy" src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/1920x1280/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24347781/STK095_Microsoft_03.jpg" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside Microsoft`s Massive Headquarters " href="https://www.youtube.com/watch?v=lOTmYcxCxjU"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside Microsoft`s Massive Headquarters </div></li><li class="splide__slide is-visible" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-slide03" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3"><div class="imggg"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczOt0MJVB0nzwIB87Z4pwKaBASUes2rcmbgPeF_hcAmqJwCeE7rxiQVAHpscdn1-mP9kW8iK4i6dtpX4KjtDbQaYU2s5b1wYPfB07SCc75TTKYQh6tiq5IdTOKLtFB0kcayLvkpKNRb2Ziz-f4SrF_5u=w1900-h900-s-no?authuser=0" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside The $5 Billion Apple Headquarters " href="https://www.youtube.com/watch?v=FzcfZyEhOoI"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside The $5 Billion Apple Headquarters </div></li>			<li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone11" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2095060036.jpg?c=16x9&amp;q=h_653,w_1160,c_fill/f_webp" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title="TikTok LA Office Tour" href="https://www.youtube.com/watch?v=bMkevtEhF2E" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo">TikTok LA Office Tour</div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone12" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/1920x1280/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24347781/STK095_Microsoft_03.jpg" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside Microsoft`s Massive Headquarters " href="https://www.youtube.com/watch?v=lOTmYcxCxjU" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside Microsoft`s Massive Headquarters </div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone13" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczOt0MJVB0nzwIB87Z4pwKaBASUes2rcmbgPeF_hcAmqJwCeE7rxiQVAHpscdn1-mP9kW8iK4i6dtpX4KjtDbQaYU2s5b1wYPfB07SCc75TTKYQh6tiq5IdTOKLtFB0kcayLvkpKNRb2Ziz-f4SrF_5u=w1900-h900-s-no?authuser=0" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside The $5 Billion Apple Headquarters " href="https://www.youtube.com/watch?v=FzcfZyEhOoI" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside The $5 Billion Apple Headquarters </div></li><li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone14" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2095060036.jpg?c=16x9&amp;q=h_653,w_1160,c_fill/f_webp" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title="TikTok LA Office Tour" href="https://www.youtube.com/watch?v=bMkevtEhF2E" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo">TikTok LA Office Tour</div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone15" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/1920x1280/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24347781/STK095_Microsoft_03.jpg" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside Microsoft`s Massive Headquarters " href="https://www.youtube.com/watch?v=lOTmYcxCxjU" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside Microsoft`s Massive Headquarters </div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone16" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczOt0MJVB0nzwIB87Z4pwKaBASUes2rcmbgPeF_hcAmqJwCeE7rxiQVAHpscdn1-mP9kW8iK4i6dtpX4KjtDbQaYU2s5b1wYPfB07SCc75TTKYQh6tiq5IdTOKLtFB0kcayLvkpKNRb2Ziz-f4SrF_5u=w1900-h900-s-no?authuser=0" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside The $5 Billion Apple Headquarters " href="https://www.youtube.com/watch?v=FzcfZyEhOoI" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside The $5 Billion Apple Headquarters </div></li><li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone17" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2095060036.jpg?c=16x9&amp;q=h_653,w_1160,c_fill/f_webp" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title="TikTok LA Office Tour" href="https://www.youtube.com/watch?v=bMkevtEhF2E" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo">TikTok LA Office Tour</div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone18" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/1920x1280/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24347781/STK095_Microsoft_03.jpg" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside Microsoft`s Massive Headquarters " href="https://www.youtube.com/watch?v=lOTmYcxCxjU" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside Microsoft`s Massive Headquarters </div></li><li class="splide__slide splide__slide--clone" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone19" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczOt0MJVB0nzwIB87Z4pwKaBASUes2rcmbgPeF_hcAmqJwCeE7rxiQVAHpscdn1-mP9kW8iK4i6dtpX4KjtDbQaYU2s5b1wYPfB07SCc75TTKYQh6tiq5IdTOKLtFB0kcayLvkpKNRb2Ziz-f4SrF_5u=w1900-h900-s-no?authuser=0" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title=" Inside The $5 Billion Apple Headquarters " href="https://www.youtube.com/watch?v=FzcfZyEhOoI" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo"> Inside The $5 Billion Apple Headquarters </div></li><li class="splide__slide splide__slide--clone is-active" style="background-color: rgb(255, 255, 255); padding: 5px; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px; margin: 1px 30px 1px -1px; width: calc(20% - 24px);" id="video-clone20" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true"><div class="imggg"><img loading="lazy" src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2095060036.jpg?c=16x9&amp;q=h_653,w_1160,c_fill/f_webp" alt=""><a class="venobox vbox-item" data-autoplay="true" data-vbtype="video" loading="lazy" title="TikTok LA Office Tour" href="https://www.youtube.com/watch?v=bMkevtEhF2E" tabindex="-1"><img src="img/home-video.svg" class="icon" "=""></a></div><div class="titleVideo">TikTok LA Office Tour</div></li></ul> 
+		</div>
+	<ul class="splide__pagination splide__pagination--ltr" role="tablist" aria-label="Select a slide to show"><li role="presentation"><button class="splide__pagination__page is-active" type="button" role="tab" aria-controls="video-slide01" aria-label="Go to slide 1" aria-selected="true"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="video-slide02" aria-label="Go to slide 2" tabindex="-1"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="video-slide03" aria-label="Go to slide 3" tabindex="-1"></button></li></ul></div> 
+</div>
+<style> 
+	.video{position: relative;display: block;margin:auto; width: 85%;user-select:none;}
+	.video a{text-decoration:none}
+	.video .imggg{position:relative;height:auto;background:#f7f7f7;}
+	.video .imggg img{width:100%;height:auto;}
+	.video .imggg .icon{width:55px;height:55px;cursor: pointer;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+	.video .titleVideo{background:#fff;display:flex;align-items:top;}
+	.video .splide__pagination__page{background:#dbdbdb;}
+	.video .splide__pagination__page.is-active{background:#cc4fe6;}
+	.video .splide__pagination{position:relative;bottom:0px;height:50px;background:#fff;}
+	@media (max-width: 700px){.video{width:95%;display:block;}}
+</style>  
+   
+<script>
+$(document).ready(function(){
+$('.venobox').venobox({spinner: 'wandering-cubes',spinColor: '#fff',closeColor: '#fff',    arrowsColor: '#fff',  share:[],});
+});
+</script>
+<script>
+var videoStatus = 'available';
+if(videoStatus == "available"){
+   new Splide( '#video', {
+  rewind : true,
+  type   : 'loop',
+  perPage: 5,
+  focus  : 'center',
+  perMove:1,
+  drag:false,
+  autoplay:true,
+  pauseOnHover:true,
+  pauseOnFocus:false,
+  autoplay:true,
+  direction: 'ltr', 
+  drag:false,
+  gap : '30px',
+  breakpoints: {
+		'700': {
+      perPage: 2,
+      drag:true,
+		},
+
+		'1200': { 
+      perPage: 3,
+      drag:true, 
+		},
+
+  },} ).mount();
+}
+</script>
+<!-- Video End -->  <div style="height:10px;"></div><div style="margin-top:50px;"><div class="footer">
+	<p>ِAll right Reserved © | Your name</p>
+	<div class="socialMedia">
+		<a href="https://www.facebook.com" target="_blank"><div class="shape" style="background:#3a5898;"><img src="img/facebook.svg"></div></a>
+		<a href="https://twitter.com" target="_blank"><div class="shape" style="background:#fff;"><img src="img/twitter.svg"></div></a>
+		<a href="https://www.instagram.com" target="_blank"><div class="shape" style="background:#bb298c;"><img src="img/instagram.svg"></div></a>
+		<a href="https://www.telegram.com" target="_blank"><div class="shape" style="background:#32a6dc;"><img src="img/telegram.svg"></div></a>
+		<a href="https://www.youtube.com" target="_blank"><div class="shape" style="background:#bc423f;"><img src="img/youtube.svg"></div></a>
+	</div>
+</div>
+<style>
+.footer{
+	position:relative;
+	width:100%;
+	min-height: 90px;
+	background:#000000;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#fff;
+	user-select:none;
+	text-align:center;
+}
+.footer .socialMedia{
+	position:absolute;
+	height:100%;
+	width:300px;
+	left:135px;
+	background:transparent;
+	display:flex;
+	align-items:center;
+	justify-content:left;
+}
+.footer .socialMedia .shape{
+	width:40px;
+	height:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:0 4px;
+	border:0px;
+	border-radius:0px;
+}
+.footer .socialMedia .shape img{
+	width:22px;
+	height:22px;
+}
+.footer .socialMedia .shape:hover{
+	opacity:0.7;
+	transition: opacity 0.3s linear;
+}
+@media (max-width: 800px) {
+.footer{
+	display:block;
+	padding:5px 0;
+	}
+.footer .socialMedia{
+	position:relative;
+	left:50%;
+	transform: translateX(-50%);
+	}
+}
+</style></div><div style="position: fixed; z-index: 1000;  bottom: -6px; left: 3px;"><a href="http://itpc.gov.iq/index.php?name=Pages&amp;op=page&amp;pid=125" target="_blank">
+<img loading="lazy" src="img/seal.svg" width="125" height="auto"></a></div><a href="http://www.alscosoftware.com"><div style="height:0px;width:0px;background:#aaa;"></div></a><a href="http://www.alscotoday.com"><div style="height:0px;width:0px;background:#ccc;"></div></a> 
+   
+<!-- Start to top Start -->
+<a href="#" id="smothToTop" style="display: none;"><span></span></a>     
+<script> 
+        $(document).ready(function(){ 
+                $(window).scroll(function(){ 
+                        if ($(this).scrollTop() > 100) { 
+                                $('#smothToTop').fadeIn(); 
+                        } else { 
+                                $('#smothToTop').fadeOut(); 
+                        } 
+                }); 
+                $('#smothToTop').click(function(){ 
+                        $("html, body").animate({ scrollTop: 0 }, 600); 
+                        return false; 
+                }); 
+        });
+</script>
+ 
+<style>
+        #smothToTop {
+        position:fixed;
+        right:20px;
+        bottom:20px;
+        cursor:pointer;
+        width:45px;
+        height:45px;
+        background-color:#333;
+        opacity:0.7;
+        text-indent:-9999px;
+        display:none;
+        -webkit-border-radius:60px;
+        -moz-border-radius:60px;
+        border-radius:60px;  
+        z-index:1;
+        }
+        #smothToTop span {
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-left:-8px;
+        margin-top:-12px;
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        border-bottom-color:#ffffff;
+        }
+        #smothToTop:hover {
+        background-color:green;
+        opacity:1;filter:"alpha(opacity=100)";
+        -ms-filter:"alpha(opacity=100)";
+        }
+</style>
+<!-- Start to top End --><div style="height:0px;"></div><script src="library/mobile/mmenu.js"></script>
+<link rel="stylesheet" href="library/mobile/mmenu.css">   	
+<style>
+.mm-menu{
+--mm-listitem-size: 50px;
+--mm-navbar-size:50px; 
+--mm-color-text:#000; 
+--mm-color-text-dimmed:black;     
+--mm-listitem-size: 50px;   
+--mm-color-border:#e5e5e5;   
+/* width: 100%;    
+min-width: 65%; 
+max-width: 65%;  */ 
+} 
+.mm-menu_iconpanel .mm-panels>.mm-panel{left:auto;}  
+.mm-listview > li > a,  
+.mm-listview > li > span {
+   padding-top: 13px;
+   padding-bottom: 13px;
+}     
+.mm-listview li:after {
+    left: 0px !important;
+}
+.mm-listview li:after {
+    right: 0px !important; 
+}   
+</style> 
+        <div id="mobile-multimenu" class="mm-page mm-slideout">
+                
+        </div> 
+   
+ 
+    
+<script>    
+            Mmenu.configs.classNames.selected = "active";
+            Mmenu.configs.offCanvas.page.selector = "#mobile-multimenu"; 
+            document.addEventListener(
+            "DOMContentLoaded", () => {
+            const menu = new Mmenu( "#my-menu", {
+                        navbar: {   
+                        title: "Menu"
+                        }, 
+                        "counters": false,
+                        slidingSubmenus: true,
+                        "iconPanels": true, 
+                        "navbars": [
+                            { 
+                            "position": "top",
+                            "content": [
+                            // "searchfield",
+                            "close",
+                            // "breadcrumbs",  
+                            ],  
+
+                       
+                            }    
+                        ], 
+       
+                        extensions: [ 
+                            // "theme-dark", 
+                            "pagedim-black",
+                            // "border-none",
+                            "border-full",
+                            //"shadow-page",
+                            "theme-white", 
+                            "position-back", 
+                            "position-left", "position-front",
+                       
+                        ], 
+
+
+                        
+                    });    
+                }  
+
+            ); 
+    </script>
+   
+
+ 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {$("#preloader").fadeOut("slow");});
+</script><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div><div class="mm-wrapper__blocker mm-slideout"><a href="#mobile-multimenu"><span class="mm-sronly">Close menu</span></a></div></body></html>

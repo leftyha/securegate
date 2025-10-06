@@ -1,0 +1,151 @@
+<!DOCTYPE html><html><head>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <title>sandbox-royal.securegateway.com--&gt;Secure Gateway</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+
+<style>
+.formtext{
+	font-family:'Open Sans Condensed', sans-serif; 
+	color:Black; 
+	font-size: 25px;
+	text-align:center;
+}
+@media(max-width:768px){
+.newsletterform{
+margin-left:0px;
+}
+.formtext {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: Black;
+    font-size: 20px;
+    text-align: center;
+}
+.newslettersection{
+background:#ffffff;
+	border-radius:5px;
+	border:1px solid #cccccc;
+	padding:10px 20px;
+	width:auto;
+	max-width:850px;
+	margin:0px auto;
+	overflow:hidden;
+}
+input[type="number"] {
+    width: 160px;
+}
+.desktoponly{
+	display:none;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+</style>
+
+
+
+<script type="text/javascript">
+var now = new Date();
+var timeup = now.setSeconds(now.getSeconds() + 30);
+//var timeup = now.setHours(now.getHours() + 1);
+
+var counter = setInterval(timer, 1000);
+
+function timer() {
+  now = new Date();
+  count = Math.round((timeup - now)/1000);
+  if (now > timeup) {
+      
+      clearInterval(counter);
+      document.getElementById("timer").innerHTML = "<a href='http://sandbox-royal.securegateway.com'><input type=\"submit\" value=\"Try Again\"/></a>";
+
+      return;
+  }
+  var seconds = Math.floor((count%30));
+  var minutes = Math.floor((count/30) % 30);
+  document.getElementById("timer").innerHTML = "Please Try Again After: " + minutes + ":" + seconds ;
+}
+
+</script>
+
+
+
+
+
+
+
+</head>
+
+<body style="background-color:FFFAFA;">
+<br><section class="newslettersection"><br>
+
+
+
+
+
+
+<center>
+<p class="formtext"><b>This Request Was Blocked For Security Reasons</b></p><br>
+<br>
+<b>Error, 403 - File Extension Is Restricted</b>
+<br>
+<img src="securegateway.gif">
+
+<!--<img src ="timeout.jpg" width="700">-->
+
+
+
+
+<br>
+<b><span id="timer"></span></b>
+
+
+<br>
+<br>
+<br>
+
+
+
+</center>
+
+
+
+
+
+
+
+</section>
+<br><br><br><br>
+
+
+
+
+
+
+<div class="desktoponly" style="position: fixed; z-index: 1000; width: 300px; height: 65px; bottom: 0px; left: 2px;">
+<h6>Your IP Address: 38.252.236.194</h6>
+
+
+<h6>Transaction ID: 17597477728719326</h6>
+<!-- <h6>Transaction ID: 20251006-134932</h6> -->
+
+
+
+
+</div><div class="desktoponly" style="position: fixed; z-index: 1000; width: 300px; height: 65px; bottom: 0px; left: 2px;"></div>
+
+
+
+
+
+
+
+
+
+</body></html>
